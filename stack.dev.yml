@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  microservice:
+    deploy:
+      replicas: 0
+
+  postgres:
+    ports:
+    - "5432:5432"

@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  tests:
+    image: microservice-tests
+    build:
+      context: ..
+      dockerfile: test/Dockerfile
+    environment:
+      APP_POSTGRES_HOST: postgres
+      APP_POSTGRES_PASSWORD: password
+
+  postgres:
+    image: postgres:14.5-alpine3.16
+    environment:
+      POSTGRES_PASSWORD: password
+    configs:
+    - source: postgres-schema
+      target: /docker-entrypoint-initdb.d/schema.sql
+    volumes:
+    - postgres-data:/var/lib/mysql
+
+configs:
+  postgres-schema:
+    file: ../sql/schema.sql
+
+volumes:
+  postgres-data:

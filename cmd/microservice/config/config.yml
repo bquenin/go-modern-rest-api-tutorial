@@ -1,0 +1,4 @@
+postgres:
+  host: localhost
+  user: postgres
+  password: changeme
