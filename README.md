@@ -1,10 +1,10 @@
-# go-rest-microservice-sample
+# Modern REST API with Go and PostgreSQL
 
-This is a REST microservice sample. It features:
+This is the code used in the **Modern REST API with Go and PostgreSQL** blog series:
 
-- A REST API Server using https://gin-gonic.com/
-- A database implementation using https://sqlc.dev/ and https://www.postgresql.org/
-- Configuration using https://github.com/spf13/viper
-- Tests using https://github.com/stretchr/testify
-- Containerized integration tests using https://docs.docker.com/compose/
-- A containerized production docker image
+- [Part 1: SQL First Data Model with sqlc](https://medium.com/@bquenin/modern-rest-api-with-go-and-postgresql-c765d571b9e7)
+- [Part 2: REST API with Gin](https://medium.com/@bquenin/modern-rest-api-with-go-and-postgresql-39b0e966534a)
+- [Part 3: Configuration with Viper](https://medium.com/@bquenin/modern-rest-api-with-go-and-postgresql-1d48767a813)
+- [Part 4: Running as a Docker container](https://medium.com/@bquenin/modern-rest-api-with-go-and-postgresql-e0070aa1b383)
+- [Part 5: Containerized tests with Docker Compose](https://medium.com/@bquenin/modern-rest-api-with-go-and-postgresql-7c916ce2816a)
+
