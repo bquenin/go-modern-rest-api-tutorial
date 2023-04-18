@@ -117,7 +117,6 @@ func (s *Service) FullUpdate(c *gin.Context) {
 		Name: request.Name,
 		Bio:  request.Bio,
 	}
-	fmt.Println(params)
 	author, err := s.queries.UpdateAuthor(context.Background(), params)
 	if err != nil {
 		if err == sql.ErrNoRows {
