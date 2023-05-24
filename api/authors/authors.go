@@ -3,10 +3,10 @@ package authors
 import (
 	"context"
 	"database/sql"
-	"fmt"
+	"net/http"
+	
 	"github.com/bquenin/microservice/internal/database"
 	"github.com/gin-gonic/gin"
-	"net/http"
 )
 
 type Service struct {
